@@ -1,0 +1,31 @@
+# 忽略构建文件夹
+/build/
+/cmake-build-debug/
+/cmake-build-release/
+
+# 忽略编译输出文件
+*.o
+*.obj
+*.so
+*.dll
+*.exe
+*.out
+
+# 忽略CMake生成的文件
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# 忽略IDE生成的文件（例如，CLion）
+.idea/
+.vscode/
+*.iml
+
+# 忽略日志文件和临时文件
+*.log
+*.tmp
+
+# 忽略操作系统生成的文件
+.DS_Store
+Thumbs.db
