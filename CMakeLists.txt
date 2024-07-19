@@ -19,11 +19,12 @@ add_subdirectory(main)
 # 设置库的安装路径
 set(CMAKE_INSTALL_PREFIX ${CMAKE_BINARY_DIR}/install)
 
-# 添加库目标
+# 添加库目标，不会生成任何实际的二进制文件
 add_library(SDC_LIB INTERFACE)
 
-# 由于是模板类，将头文件作为库的一部分安装
+#用于引入 GNU 安装目录模块，以确保项目在不同平台和系统上的文件安装位置保持一致
 include(GNUInstallDirs)
+
 target_include_directories(SDC_LIB INTERFACE $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include> $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 
 # 安装头文件
