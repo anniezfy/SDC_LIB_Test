@@ -36,7 +36,7 @@ install(TARGETS SDC_LIB EXPORT SDC_LIBTargets
         ARCHIVE DESTINATION lib
 )
 
-# 安装导出目标
+# 安装导出目标，设置命名空间
 install(EXPORT SDC_LIBTargets
         FILE SDC_LIBTargets.cmake
         NAMESPACE SDC::

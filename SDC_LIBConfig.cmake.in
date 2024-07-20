@@ -1,3 +1,3 @@
 @PACKAGE_INIT@
 
-include("${CMAKE_CURRENT_LIST_DIR}/PEA_VectorTargets.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/SDCLIB_Targets.cmake")
